@@ -33,7 +33,7 @@ def create_database(folder_path, db_name):
                 table_name = csv_file[:-4]  # Remove '.csv' extension
                 with open(os.path.join(folder_path, csv_file), 'r') as f:
                     reader = csv.reader(f)
-                    headers = next(reader)  # Assuming the first row contains headers
+                    headers = next(reader)  # I wrote coz first row contains headers
                     first_row = next(reader)  # Read the first row of data to infer types
                     column_types = [infer_data_type(value) for value in first_row]
                     columns_with_types = [f'"{header}" {col_type}' for header, col_type in zip(headers, column_types)]
@@ -55,8 +55,8 @@ def create_database(folder_path, db_name):
 general_csv_folder = 'data/CSV_files/general'
 results_csv_folder = 'data/CSV_files/results'
 
-# Create 'general.db' database
+# Createc 'general.db' database
 create_database(general_csv_folder, 'data/general.db')
 
-# Create 'results.db' database
+# Created 'results.db' database
 create_database(results_csv_folder, 'data/results.db')
