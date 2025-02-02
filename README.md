@@ -1,6 +1,6 @@
 # Olympics 2024 Analysis
 
-Intersting thing about this project is it involves creating a SQLite database from CSV files with multiple tables and establishing the connection using SQLite module. The analysis includes various visualizations and data processing steps using Python libraries such as pandas, numpy, matplotlib, seaborn, and scikit-learn.
+Interesting thing about this project is it involves creating a SQLite database from CSV files with multiple tables and establishing the connection using SQLite module. The analysis includes various visualizations and data processing steps using Python libraries such as pandas, numpy, matplotlib, seaborn, and scikit-learn.
 
 ## Installation
 
